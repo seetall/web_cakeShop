@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- custom css file link  -->
+    <link th:href="@{~/css/dashboard.css}" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+    <div class="header-2">
+        <a class="logo"><img th:src="@{/images/logo/logo.webp}"  width="auto" height="50" alt=""/>
+        </a>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </div>
+    <div class="header-3">
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#home">cake</a>
+            <a href="#category">category</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a src="BootStrap\login.html" class="fas fa-user-circle"></a>
+        </div>
+    </div>
+</header>
+
+<!--<section class="banner-container">-->
+
+<!--    <div class="banner">-->
+<!--        <img th:src="@{~/images/dashboard/banner1.jpg}" alt="">-->
+<!--        <div class="content">-->
+<!--            <span>new arrivals</span>-->
+<!--            <h3>house plants</h3>-->
+<!--            <a href="#" class="btn">see types</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="banner">-->
+<!--        <img th:src="@{~/images/dashboard/banner2.jpg}" alt="">-->
+<!--        <div class="content">-->
+<!--            <span>new arrivals</span>-->
+<!--            <h3>office plants</h3>-->
+<!--            <a href="#" class="btn">see types</a>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--</section>-->
+
+<!-- banner section ends -->
+
+<!-- category section starts  -->
+
+<section class="category" id="category">
+
+    <h1 class="heading"> Cakes </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img th:src="@{~/images/dashboard/cat1.jpg}" alt="">
+            <div class="content">
+                <h3>Birthday Cakes</h3>
+                <a href="#" class="btn">see types</a>
+            </div>
+        </div>
+        <div class="box">
+            <img th:src="@{~/images/dashboard/cat2.jpg}" alt="">
+            <div class="content">
+                <h3>Anniversary Cakes</h3>
+                <a href="#" class="btn">see types</a>
+            </div>
+        </div>
+        <div class="box">
+            <img th:src="@{~/images/dashboard/cat3.jpg}" alt="">
+            <div class="content">
+                <h3>Bento Cakes</h3>
+                <a href="#" class="btn">see types</a>
+            </div>
+        </div>
+        <div class="box">
+            <img th:src="@{~/images/dashboard/cat4.jpg}" alt="">
+            <div class="content">
+                <h3>Accessories</h3>
+                <a href="#" class="btn">see types</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- category section ends -->
+
+<!-- product section starts  -->
+
+<section class="product" id="product">
+
+    <h1 class="heading"> new products </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img th:src="@{~/images/dashboard/product1.jpg}" alt="">
+            <h3>new flavoured cake</h3>
+            <a href="#" class="btn">view information</a>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img th:src="@{~/images/dashboard/product2.jpg}" alt="">
+            <h3>new flavoured cake</h3>
+            <a href="#" class="btn">view information</a>
+        </div>
+
+<!--        <div class="box">-->
+<!--            <div class="icons">-->
+<!--                <a href="#" class="fas fa-heart"></a>-->
+<!--                <a href="#" class="fas fa-share"></a>-->
+<!--                <a href="#" class="fas fa-eye"></a>-->
+<!--            </div>-->
+<!--            <img th:src="@{~/images/dashboard/product3.jpg}" alt="">-->
+<!--            <h3>latest plants</h3>-->
+<!--            <a href="#" class="btn">view information</a>-->
+<!--        </div>-->
+
+<!--        <div class="box">-->
+<!--            <div class="icons">-->
+<!--                <a href="#" class="fas fa-heart"></a>-->
+<!--                <a href="#" class="fas fa-share"></a>-->
+<!--                <a href="#" class="fas fa-eye"></a>-->
+<!--            </div>-->
+<!--            <img th:src="@{~/images/dashboard/product4.jpg}" alt="">-->
+<!--            <h3>latest plants</h3>-->
+<!--            <a href="#" class="btn">view information</a>-->
+<!--        </div>-->
+
+<!--        <div class="box">-->
+<!--            <div class="icons">-->
+<!--                <a href="#" class="fas fa-heart"></a>-->
+<!--                <a href="#" class="fas fa-share"></a>-->
+<!--                <a href="#" class="fas fa-eye"></a>-->
+<!--            </div>-->
+<!--            <img th:src="@{~/images/dashboard/product5.jpg}"alt="">-->
+<!--            <h3>latest plants</h3>-->
+<!--            <a href="#" class="btn">view information</a>-->
+<!--        </div>-->
+
+<!--        <div class="box">-->
+<!--            <div class="icons">-->
+<!--                <a href="#" class="fas fa-heart"></a>-->
+<!--                <a href="#" class="fas fa-share"></a>-->
+<!--                <a href="#" class="fas fa-eye"></a>-->
+<!--            </div>-->
+<!--            <img th:src="@{~/images/dashboard/product6.jpg}" alt="">-->
+<!--            <h3>latest plants</h3>-->
+<!--            <a href="#" class="btn">view information</a>-->
+<!--        </div>-->
+
+    </div>
+
+</section>
+
+<!-- product section ends -->
+
+<section id="menu">
+    <div class="container">
+        <div class="heading3">Menu</div>
+    </div>
+    <div class="container" id="container2">
+        <div class="row" style="display: flex; align-self: center;
+         flex-wrap: wrap;
+         justify-content: space-around;">
+            <section id="home">
+                <li class="nav-item" >
+                    <a class="nav-link active" th:href="@{/user/shopNow}">Details of Products</a>
+                </li>
+                <div class="row content">
+                    <div class=" card-deck container-fluid d-flex  flex-wrap justify-content-start align-items-center"  >
+                        <div class="card" style="width: 18rem; margin-right: 4px" th:each="plant: ${plantList}">
+                            <div class="card-body" >
+                                <h5 class="card-title" th:text="${plant.namep}"></h5>
+                                <img class="card-text" th:src="${plant.image}" width="150px" height="150px"></img>
+                                <p class="card-text" th:text="${plant.description}"></p>
+                            </div>
+                            <li class="nav-item">
+                                <a th:href="@{/user/userHome/contact}" class="nav-link active"
+                                   onclick="if (!(confirm('Call Us to Order'))) return false">Order</a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+</div>
+</section>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">category</a>
+            <a href="#">contact</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">instagram</a>
+            <a href="#">linked</a>
+        </div>
+        <section class="icons-container">
+            <div class="icon">
+                <img th:src="@{~/images/dashboard/icon4.png}" alt="">
+                <div class="content">
+                    <h3>Support 24/7</h3>
+                    <p>Contact us anytime</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+<!-- footer section ends -->
+
+<!-- scroll top button  -->
+<a href="#home" class="scroll-top fas fa-angle-up"></a>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script th:href="@{~/js/dashbo.js}"></script>
+
+</body>
+</html>
